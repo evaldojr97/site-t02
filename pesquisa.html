@@ -16,9 +16,28 @@
 
 <body>
     <!--Inicio Navbar -->
-    <h1>Navbar</h1>
-    <p>Nesta pag a navbar altera as opções, porem se mantem o estilo.</p>
-    <p>As opções são: Home(pesquisa.html), Perfil e Sair(index.html)</p>
+    <nav class="navbar bg-info navbar-expand-sm navbar-dark justify-content-between">
+        <a class="navbar-brand" href="./index.html">
+            <img src="./img/logo.png">
+            Ciclic
+        </a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="./pesquisa.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Perfil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./index.html">Sair</a>
+            </li>
+        </ul>
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+        </form>
+    </nav>
+    <!--As opções são: Home(pesquisa.html), Perfil e Sair(index.html)-->
     <!--Fim Navbar -->
     <!--Inicio Pesquisa -->
     <h1>Nossos Produtos</h1>
@@ -27,8 +46,10 @@
         adicionando uma descrição do produto</p>    
     <!--Fim Pesquisa -->
     <!--Inicio Footer -->
-    <footer>
-        <h1>Footer</h1>
+    <footer class="page-footer font-small mt-4 bg-info text-white">
+        <div class="footer-copyright text-center py-4">
+            © 2019 ❤️ by Ciclic
+          </div>
     </footer>
     <!--Fim Footer -->
 
