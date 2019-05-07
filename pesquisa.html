@@ -37,10 +37,44 @@
             <button class="btn btn-outline-light" type="submit">Pesquisar</button>
         </form>
     </nav>
-    <!--As opções são: Home(pesquisa.html), Perfil e Sair(index.html)-->
     <!--Fim Navbar -->
     <!--Inicio Pesquisa -->
-    <h1>Nossos Produtos</h1>
+    <div class="py-2 navbar mt-1 bg-info text-white justify-content-between" >
+        <h2 class="ml-2">Nossos Produtos</h2>
+        <div class="dropdown float-right">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ordenar por:
+            </button>
+            <div class="dropdown-menu">
+                <a class="dropdown-item" href="#">Popularidade</a>
+                <a class="dropdown-item" href="#">Maior preço</a>
+                <a class="dropdown-item" href="#">Menor preço</a>
+            </div>
+        </div>
+        <ul class="pagination mt-1 text-dark">
+            <li class="page-item">
+                <a class="page-link" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            </li>
+            <li class="page-item active">
+                <a class="page-link">1</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link">2</a>
+            </li>
+            <li class="page-item">
+                <a class="page-link">3</a>
+            </li>
+            <li class="page-item">
+            <a class="page-link" aria-label="Next">
+                <span aria-hidden="true">&raquo;</span>
+                <span class="sr-only">Next</span>
+            </a>
+            </li>
+        </ul>
+    </div>
     <p>Devera ter campos onde o usuario possa pesquisar/filtrar os produtos</p>
     <p>Apresenta todos os produtos(os mesmos contidos na seção produtos), porem apresentando um detalhamento maior,
         adicionando uma descrição do produto</p>    
