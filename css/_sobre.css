@@ -1,0 +1,21 @@
+.tinta {
+    color:#60b1cf;
+        text-align: center;
+}
+.tintap { 
+    color:black;
+    font-family:sans-serif;
+    font-size:18px;
+    width:300px;
+}
+
+.tintaf { 
+    color:black;
+    font-family:serif;
+    font-size:18px;
+}
+.block {
+ height: 300px;
+ width: 200px;
+}
+    
