@@ -38,3 +38,8 @@ tr:nth-child(n + 6) {
 	font-size: 110%;
 }
 
+.centered {
+    margin: 0 auto !important;
+    float: none !important;
+    padding-top: 2em;    
+}
