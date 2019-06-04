@@ -32,9 +32,19 @@
                 <a class="nav-link" href="./index.html">Sair</a>
             </li>
         </ul>
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
-            <button class="btn btn-outline-light" type="submit">Pesquisar</button>
+        <form class="form-inline  my-2 my-lg-0">
+            <div class="input-group input-group-sm">
+                <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm" placeholder="Pesquisar...">
+                <div class="input-group-append">
+                    <button type="button" class="btn btn-secondary btn-number">
+                        Ir
+                    </button>
+                </div>
+            </div>
+            <a class="btn btn-success btn-sm ml-3" href="#">
+                <i class="fa fa-shopping-cart"></i> Carrinho
+                <span class="badge badge-light">0</span>
+            </a>
         </form>
     </nav>
     <!--Fim Navbar -->
@@ -42,7 +52,7 @@
     <div class="py-2 navbar mt-1 bg-info text-white justify-content-between" >
         <h2 class="ml-2">Nossos Produtos</h2>
         <div class="dropdown float-right">
-            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                 Ordenar por:
             </button>
             <div class="dropdown-menu">
@@ -51,40 +61,179 @@
                 <a class="dropdown-item" href="#">Menor preço</a>
             </div>
         </div>
-        <ul class="pagination mt-1 text-dark">
-            <li class="page-item">
-                <a class="page-link" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Previous</span>
-                </a>
-            </li>
-            <li class="page-item active">
-                <a class="page-link">1</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link">2</a>
-            </li>
-            <li class="page-item">
-                <a class="page-link">3</a>
-            </li>
-            <li class="page-item">
-            <a class="page-link" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-                <span class="sr-only">Next</span>
-            </a>
-            </li>
-        </ul>
+        
+       
     </div>
-    <p>Devera ter campos onde o usuario possa pesquisar/filtrar os produtos</p>
-    <p>Apresenta todos os produtos(os mesmos contidos na seção produtos), porem apresentando um detalhamento maior,
-        adicionando uma descrição do produto</p>    
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-3">
+                <div class="card bg-info mb-3">
+                    <div class="card-header bg-info text-white"><i class="fa fa-list"></i> Categorias</div>
+                    <ul class="list-group category_block">
+                        <li class="list-group-item"><a href="#">Cisternas</a></li>
+                        <li class="list-group-item"><a href="#">Encanamentos</a></li>
+                        <li class="list-group-item"><a href="#">Filtros</a></li>
+                        <li class="list-group-item"><a href="#">Captadores</a></li>
+                        <li class="list-group-item"><a href="#">Reservatórios</a></li>
+                    </ul>
+                </div>
+                <div class="card bg-light mb-3">
+                    <div class="card-header bg-secondary text-white text-uppercase">Mais popular</div>
+                    <div class="card-body">
+                        <img class="img-fluid" src="./img/captacao.jpg" />
+                        <h5 class="card-title">Sistema de Captação Completo</h5>
+                        <p class="card-text">Sistema de captação de água da chuva completo para o maior aproveitamento e reciclagem, pronto para instalação e utilização.</p>
+                        <p class="item-price"><strike>$7400.00</strike> <br><span>$6869.00</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/boia.jpg" alt="Foto produto">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="#" class="text-dark" title="Ver produto">Válvula boia</a></h4>
+                                <p class="card-text">Válvula boia utilizada para o controle de vazão da água de acordo com a capacidade do reservatório, podendo ser caixa d'água ou cisterna</p>
+                                <div class="row card-infos">
+                                    <div class="col">
+                                        <p class="item-price"><strike>$70.00</strike> <br><span>$58.00</span></p>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="btn btn-success btn-block">Add ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/captacao.jpg" alt="Foto produto">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="#" class="text-dark" title="Ver produto">Sistema de Captação Completo</a></h4>
+                                <p class="card-text">Sistema de captação de água da chuva completo para o maior aproveitamento e reciclagem, pronto para instalação e utilização.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="item-price"><strike>$7400.00</strike> <br><span>$6869.00</span></p>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="btn btn-success btn-block">Add ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/cisterna-rural.gif" alt="Foto produto">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="#" class="text-dark" title="Ver produto">Cisterna Rural</a></h4>
+                                <p class="card-text">Cisterna para armazenamento subterraneo de água da chuva em localidade rural.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="item-price"><strike>$3400.00</strike> <br><span>$3069.00</span></p>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="btn btn-success btn-block">Add ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/cisterna.jpg" alt="Foto produto">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="#" class="text-dark" title="Ver produto">Cisterna externa</a></h4>
+                                <p class="card-text">Cisterna externa para armazenamento de água da chuva em qualquer tipo de ambiente, como comerciais ou residenciais.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="item-price"><strike>$2900.00</strike> <br><span>$2369.00</span></p>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="btn btn-success btn-block">Add ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/cisterna_acua.webp" alt="Foto produto">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="#" class="text-dark" title="Ver produto">Cisterna AcquaLimp</a></h4>
+                                <p class="card-text">Cisterna AcquaLimp para armazenamento de água da chuva em qualquer tipo de ambiente, tendo capacidade extendida e sistema de limpeza facilitado.</p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="item-price"><strike>$4200.00</strike> <br><span>$3789.00</span></p>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="btn btn-success btn-block">Add ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="card">
+                            <img class="card-img-top" src="./img/filtro.webp" alt="Foto produto">
+                            <div class="card-body">
+                                <h4 class="card-title"><a href="#" class="text-dark" title="Ver produto">Filtro para cisterna ChoveChuva</a></h4>
+                                <p class="card-text"></p>
+                                <div class="row">
+                                    <div class="col">
+                                        <p class="item-price"><strike>$1400.00</strike> <br><span>$1099.00</span></p>
+                                    </div>
+                                    <div class="col">
+                                        <a href="#" class="btn btn-success btn-block">Add ao carrinho</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div>
+    </div>
     <!--Fim Pesquisa -->
+    
+    <!-- Inicio Paginação-->
+    <div class="container">
+        <div class="row">
+            <div class="centered">
+                <ul class="pagination mt-1 text-dark">
+                    <li class="page-item">
+                        <a class="page-link" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    </li>
+                    <li class="page-item active">
+                        <a class="page-link">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link">3</a>
+                    </li>
+                    <li class="page-item">
+                    <a class="page-link" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
     <!--Inicio Footer -->
     <footer class="page-footer font-small mt-4 bg-info text-white">
         <div class="footer-copyright text-center py-4">
             © 2019 ❤️ by Ciclic
           </div>
-    </footer>
+    </footer role="row">
     <!--Fim Footer -->
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
